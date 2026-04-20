@@ -1,14 +1,36 @@
-IyBQcm9qZWN0cyBNb2R1bGUKCkEgcHJvamVjdCBtYW5hZ2VtZW50IG1vZHVsZSBmb3IgTGFTdGFy
-dGVyIHRoYXQgbGV0cyB0ZWFtcyBvcmdhbml6ZSB0aGVpciB3b3JrIGludG8gcHJvamVjdHMuCgoj
-IyBGZWF0dXJlcwoKLSBDcmVhdGUgYW5kIG1hbmFnIHByb2plY3RzIHdpdGhpbiB5b3VyIHRlYW0K
-LSBDdXN0b20gdmlzaWJpbGl0eSBzZXR0aW5ncyAocHJpdmF0ZSwgdGVhbSwgcHVibGljKQotIFBl
-cm1pc3Npb24tYmFzZWQgYWNjZXNzIGNvbnRyb2wKLSBJbnRlZ3JhdGVzIHdpdGggdGhlIFRhc2tz
-IG1vZHVsZQoKIyMgUGVybWlzc2lvbnMKCnBgYGAKcHJvamVjdC52aWV3ICAgICAjIFZpZXwgcHJv
-amVjdHMKcHJvamVjdC5jcmVhdGUgICAgIyBDcmVhdGUgbmV3IHByb2plY3RzCnByb2plY3QudXBk
-YXRlICAgICMgVXBkYXRlIHByb2plY3RzCnByb2plY3QuZGVsZXRlICAgICMgRGVsZXRlIHByb2pl
-Y3RzCmBgYAoKIyMgSW5zdGFsbGF0aW9uCgpJbnN0YWxsIHRocm91Z2ggdGhlIG1hcmtldHBsYWNl
-IG9yIHJ1bjoKCmBgYGJhc2gKcGhwIGFydGlzYW4gZXh0ZW5zaW9uczpzY2FuCnBocCBhcnRpc2Fu
-IGV4dGVuc2lvbnM6c3luYwpwaHAgYXJ0aXNhbiBleHRlbnNpb25zOmVuYWJsZSBwcm9qZWN0cwpw
-aHAgYXJ0aXNhbiBtaWdyYXRlCmBgYAoKIyMgU2V0dGluZ3MKCnwgU2V0dGluZyB8IERlc2NyaXB0
-aW9uIHwgRGVmYXVsdCB8CnwtLS0tLS0tLS18LS0tLS0tLS0tLS0tLXwtLS0tLS0tLXwKfCBEZWZh
-dWx0IFZpc2liaWxpdHkgfCBOZXcgcHJvamVjdCB2aXNpYmlsaXR5IHwgcHJpdmF0ZSB8Cg==
+# Projects Module
+
+A project management module for LaStarter that lets teams organize their work into projects.
+
+## Features
+
+- Create and manage projects within your team
+- Custom visibility settings (private, team, public)
+- Permission-based access control
+- Integrates with the Tasks module
+
+## Permissions
+
+```
+project.view    # View projects
+project.create   # Create new projects
+project.update   # Update projects
+project.delete   # Delete projects
+```
+
+## Installation
+
+Install through the marketplace or run:
+
+```bash
+php artisan extensions:scan
+php artisan extensions:sync
+php artisan extensions:enable projects
+php artisan migrate
+```
+
+## Settings
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| Default Visibility | New project visibility | private |
