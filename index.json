@@ -1,14 +1,1 @@
-[
-  {
-    "identifier": "spaces",
-    "name": "Spaces",
-    "type": "module",
-    "description": "Secure workspace management with document handling, e-signatures, and RGPD compliance for organizations",
-    "path": "modules/spaces",
-    "author": "LaStarter",
-    "version": "1.0.0",
-    "license": "MIT",
-    "topics": ["lastarter-module"],
-    "stargazers_count": 0
-  }
-]
+[]
