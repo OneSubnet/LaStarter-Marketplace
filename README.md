@@ -6,20 +6,14 @@ Marketplace officiel pour les extensions [LaStarter](https://github.com/OneSubne
 
 LaStarter est une plateforme multi-tenant modulaire construite sur **Laravel 13 + React 19 + TypeScript + Inertia.js 3**. Ce depot sert d'index pour les extensions disponibles publiquement, integrees via le systeme de marketplace GitHub.
 
+Le theme par defaut est directement integre a l'application — il n'est pas distribue separement.
+
 ## Structure
 
 ```
 modules/{owner}/{repo}/   — Extensions module
 themes/{owner}/{repo}/    — Extensions theme
 ```
-
-## Extensions Disponibles
-
-### Themes
-
-| Theme | Description | Version |
-|-------|-------------|---------|
-| Default | Theme par defaut avec dashboard propre et composants UI modernes | 1.0.0 |
 
 ## Soumettre une Extension
 
@@ -102,7 +96,7 @@ Le manifeste doit suivre le schema JSON officiel :
 ### Champs du Manifeste
 
 | Champ | Requis | Description |
-|------|--------|--------------|
+|-------|--------|-------------|
 | `name` | Oui | Nom d'affichage |
 | `identifier` | Oui | Identifiant unique (slug) |
 | `type` | Oui | `module`, `theme` ou `language` |
